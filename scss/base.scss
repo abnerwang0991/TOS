@@ -1,0 +1,461 @@
+$main-font: Microsoft JhengHei;
+$bg-color: #262626;
+$main-color: #E3E3E3;
+$nav-bg-color: #123456;
+$nav-font-color: rgb(219,184,72);
+$intro-color: #FAFAFA;
+$intro-color-hover: #262626;
+$font-size: 14px;
+$title-font-size: 18px;
+$subtitle-font-size: 15px;
+$subtitle-color:#FAFAFA;
+$desktop-font-size: 20px;
+$desktop-title-font-size: 26px;
+%subtitle {
+  font-weight: bold;
+  font-size: $subtitle-font-size;
+  color: $subtitle-color;
+}
+body {
+  font-family: $main-font;
+  background: $bg-color;
+  color: $main-color;
+  font-size: $font-size;
+  text-decoration: none;
+  padding-top: 50px; 
+  .container-fluid {
+    margin-bottom: 10px;
+  }
+}
+nav {
+  font-family: $main-font;
+  font-size: $title-font-size;
+  &.navbar {
+    z-index: 9999;
+    border: none;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .logo {
+    text-indent: -99999px;
+    background: url(https://cdn-www.bluestacks.com/bs-images/ghost-of-the-tower_logo.png);
+    background-size: cover;
+    width: 200px;
+  }
+  .nav {
+    li {
+      a {
+        color: $nav-font-color !important;
+        transition: 0.3s;
+      }
+    }
+    &.navbar-nav {
+      li {
+        &.active {
+          a {
+            color: $bg-color !important;
+            background-color: $nav-font-color !important;
+          }
+        }
+        a {
+          &:hover {
+            color: $bg-color !important;
+            background-color: $nav-font-color;
+          }
+        }
+      }
+    }
+  }
+}
+#myCarousel {
+  .item {
+    img {
+      width: 100%;
+    }
+  }
+}
+h1 {
+  color: $nav-font-color;
+  font-size: $title-font-size;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 70px;
+}
+#guidance {
+  ul {
+    &.nav.nav-pills {
+      width: 95%;
+      margin: auto;
+      @extend %subtitle;
+      li {
+        &.active {
+          a {
+            color: $bg-color;
+            background-color: $nav-font-color;
+          }
+        }
+      }
+      a {
+        color: $nav-font-color;
+        transition: 0.5s;
+        &:hover {
+          color: $bg-color;
+          background-color: $nav-font-color;
+        }
+        &:focus {
+          color: $bg-color;
+          background-color: $nav-font-color;
+        }
+      }
+    }
+  }
+  .tab-content {
+    #tutorial {
+      margin-top: 10px;
+      .tutorial-left {
+        iframe {
+          width: 100%;
+          height: 300px;
+        }
+      }
+      .tutorial-right {
+        margin-top: 10px;
+        .content {
+          span {
+            @extend %subtitle;
+          }
+        }
+      }
+    }
+    #battle {
+      margin-top: 10px;
+      .content {
+        span {
+          @extend %subtitle;
+        }
+      }
+      .text {
+        padding: 20px 0 10px 0;
+        @extend %subtitle;
+      }
+      .btPhoto {
+        width: 100%;
+      }
+    }
+    #bind {
+      img {
+        width: 100%;
+      }
+      .step {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        @extend %subtitle;
+      }
+    }
+  }
+}
+#story {
+  .story-left {
+    iframe {
+      width: 100%;
+      height: 300px;
+    }
+  }
+  .story-right {
+    height: 200px;
+    .content {
+      text-align: center;
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
+#intro {
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+  &.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .intro {
+    div {
+      float: left;
+      width: 33.33%;
+      overflow: hidden;
+      position: relative;
+      cursor: default;
+      img {
+        width: 100%;
+        display: block;
+        position: relative;
+        transition: all 0.2s linear;
+      }
+      .mask {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        opacity: 0;
+        background-color: rgba(250, 250, 250, 0.6); 
+        transition: all 0.5s ease-in-out;
+        a {
+          cursor: pointer;
+          color: $intro-color;
+          background-color: $intro-color-hover;
+          opacity: 0.9;
+          &:hover,  {
+          color: $intro-color-hover;
+          background: $intro-color;
+          opacity: 0.9;
+          text-decoration: none;
+          animation: tada 1s;
+        }
+        }
+      }
+      &:hover {
+        opacity: 1;
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .card {
+    div {
+      display: none;
+      position: absolute;
+      top: 0;
+      background: rgba(38, 38, 38, 0.9); 
+      width: 100%;
+      height: 100%;
+      .cardphoto {
+        position: absolute;
+        top: -50px;
+        right: 0px;
+        width: 100%;
+        z-index: 1;
+        margin: auto;
+        display: block;
+        animation: slideLeft 1s;
+      }
+      .cardtable {
+        position: absolute;
+        top: 65%;
+        width: 100%;
+        z-index: 1;
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+}
+#contact {
+  span{
+    &.english {
+    padding-left: 17px;
+    }
+  }
+}
+footer {
+  text-align: center;
+  background-color: #1C1C1C;
+  padding: 5px;
+  span {
+    transition: all 0.3s;
+    color: #DAA520;
+    display: block;
+    &:hover {
+      transform: translateY(-30%);
+      color: #fff;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  %flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  h1 {
+  color: $nav-font-color;
+  font-size: $desktop-title-font-size;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+  }
+  .container-fluid {
+    margin: 60px 50px;
+  }
+  #guidance {
+    .tab-content {
+      #tutorial {
+        margin-top: 30px;
+        .tutorial-left {
+          @extend %flex;
+          height: 400px;
+          iframe {
+            width: 90%;
+            height: 100%;
+          }
+        }
+        .tutorial-right {
+          @extend %flex;
+          height: 400px;
+          .content {
+            width: 90%;
+          }
+        }
+      }
+      #battle {
+        margin-top: 30px;
+        .content {
+          margin-left: 3.1%;
+        }
+        .text {
+          margin-left: 10%;
+          padding: 20px 0 10px 0;
+        }
+        .btPhoto {
+          width: 80%;
+          margin: auto;
+          display: block;
+        }
+      }
+      #bind {
+        img {
+          width: 100%;
+        }
+        .step {
+          height: 70px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  #story {
+    .story-left {
+    @extend %flex;
+    height: 400px;
+    iframe {
+      width: 90%;
+      height: 100%;
+    }
+  }
+    .story-right {
+      @extend %flex;
+      height: 400px;
+      .content {
+        width: 90%;
+        margin: 0;
+      }
+    }
+  }
+  #intro {
+    .intro {
+      div {
+        width: 20%;
+        a {
+          font-size: $title-font-size;
+          padding: 10px;
+        }
+      }
+    }
+    .card {
+      div {
+        display: none;
+        position: absolute;
+        top: 0;
+        background: rgba(38, 38, 38, 0.9); 
+        width: 100%;
+        height: 100%;
+        .cardphoto {
+          position: absolute;
+          top: 0px;
+          right: 80px;
+          width: 40%;
+          z-index: 1;
+          animation: slideLeft 1s;
+        }
+        .cardtable {
+          position: absolute;
+          top: 40%;
+          left: 5%;
+          width: 40%;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 10px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(70%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-70%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(70%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slideL {
+  visibility: hidden;
+  &.slideLeft {
+    visibility: visible;
+    animation: slideLeft 1s;
+  }
+}
+.slideR {
+  visibility: hidden;
+  &.slideRight {
+    visibility: visible;
+    animation: slideRight 1s;
+  }
+}
+.slideU {
+  visibility: hidden;
+  &.slideUp {
+    visibility: visible;
+    animation: slideUp 1s;
+  }
+}
+.fadeIn {
+  animation: fadeIn 1s;
+}

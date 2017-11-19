@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>神魔之塔 | Tower of Saviors</title>
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/base.css" type="text/css">
+	<link rel="stylesheet" href="css/_animate.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+</head>
+<body id="tos" data-spy="scroll" data-target=".navbar" data-offset="10">
+	<!-- nav -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="#tos"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#guidance">遊戲指引</a></li>
+          <li><a href="#story">遊戲故事</a></li>
+          <li><a href="#intro">卡片介紹</a></li>
+          <li><a href="#contact">聯絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+	<!-- Carousel -->
+  <section  id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item">
+        <img src="http://d3jagfr1ku3qj3.cloudfront.net/2017/10/119_website_851x315_ZH1.jpg" alt="Chicago">
+      </div>
+
+      <div class="item">
+        <img src="http://d3jagfr1ku3qj3.cloudfront.net/2017/10/117_website_851x315_ZH_B_v2.png" alt="New York">
+      </div>
+      
+      <div class="item active">
+        <img src="http://d3jagfr1ku3qj3.cloudfront.net/2016/05/101_website_851x315_zh_v1_resized.jpg" alt="Los Angeles">
+      </div> 
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </section>
+
+	<!-- guidance -->
+	<section id="guidance" class="container-fluid">
+		<h1>遊戲指引</h1>
+		<div>
+			<!-- pills -->
+			<div class="row">
+				<ul class="nav nav-pills nav-justified">
+		      <li class="active"><a data-toggle="pill" href="#tutorial" class="active">新手教學</a></li>
+		      <li><a data-toggle="pill" href="#battle">討伐戰</a></li>
+		      <li><a data-toggle="pill" href="#bind">帳號綁定</a></li>
+	    </ul>
+			</div>
+      <div class="tab-content">
+				<!--tutorial-->
+				<div id="tutorial" class="tab-pane fade in active">
+					<div class="row">
+						<div class="col-sm-6 tutorial-left slideR">
+						  <iframe src="https://www.youtube.com/embed/QDxak4SIqYs" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="col-sm-6 tutorial-right slideL">
+						  <div class="content">
+						    <div><span>移動符石</span><br/>
+						      《神魔之塔》的戰鬥建立於釋放符石上，每移動一粒符石都會同時影響四周符石的位置，當同屬性的符石連接三粒或以上，即可釋放該符石力量，發動召喚獸攻擊。<br/><br/></div>
+						    <div><span>連撃加成</span><br/>
+						      每次在攻擊階段時，召喚師都可以在限時內任意移動一粒符石。當召喚師鬆開符石或到達時限時，將會結算所有因該次移動而釋放的符石力量。<br/><br/></div>
+						    <div><span>攻擊充能</span><br/>
+						      每當符石結算完畢後，該屬性能量將注入相同屬性的召喚獸，並令該召喚獸進行單體攻擊，不屬於該屬性的符石能量仍會小量增加總傷害，但並不會令不屬於該屬性的召喚獸發動攻擊。<br/><br/></div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<!-- battle-->
+				<div id="battle" class="tab-pane fade">
+					<div class="row">
+					  <div class="col-sm-12">
+					    <div class="content"><span>討伐戰</span><br>討伐戰是一場持久的戰役，面對討伐戰王連同多個超級強敵的侵襲，召喚師需要聯合公會一眾成員的力量，一同征討外來異敵！<br><br><span>討伐戰規則</span><br>每個成員的任務進度均會保留，進度達至 100% 視作挑戰成功<br>每個任務需於 24 小時內或討伐戰活動完結前完成，否則視作挑戰失敗<br>承接挑戰未完成的討伐任務，進入關卡後所有隊員的技能冷卻回合減少 5<br>進入討伐戰關卡後，召喚師有 5 分鐘時間戰鬥，於戰鬥中死亡或時間完結時，召喚師會立即退出戰鬥
+					    </div>
+					  </div>
+					  <div class="col-sm-4">
+					  	<div class="text">每個公會成員均可建立討伐戰任務
+					  	</div>
+					    <img class="btPhoto" src="http://d3jagfr1ku3qj3.cloudfront.net/2016/04/joint_inc_build_mission.jpg" alt=""></div>
+					  <div class="col-sm-4">
+					  	<div class="text">或點擊任務列表，承接挑戰未完成的討伐任務</div>
+					    <img class="btPhoto" src="http://d3jagfr1ku3qj3.cloudfront.net/2016/04/mission_list_interface.jpg" alt=""></div>
+					  <div class="col-sm-4">
+					  	<div class="text">每次進入討伐戰任務需要消耗戰靈
+					  	</div>
+					    <img class="btPhoto" src="http://d3jagfr1ku3qj3.cloudfront.net/2016/04/build_mission_page.jpg" alt=""></div>
+					</div>
+				</div>
+				<!-- bind-->
+				<div id="bind" class="container tab-pane fade">
+					<div class="row">
+						<div class="col-sm-4">
+				    <div class="step">
+				    	<div>
+				    		步驟一：點擊主界面右上角的「設定」功能鍵。
+				    	</div>
+				    </div>
+				    <div><img src="http://d3jagfr1ku3qj3.cloudfront.net/2013/09/A1.jpg" alt=""></div>
+			  	</div>
+				  <div class="col-sm-4">
+				    <div class="step">
+							<div>
+								步驟二：於設定頁面點選「綁定帳戶」。
+							</div>
+				    </div>
+				    <div><img src="http://d3jagfr1ku3qj3.cloudfront.net/2013/09/A2.jpg" alt=""></div>
+				  </div>
+				  <div class="col-sm-4">
+				    <div class="step">
+				    	<div>步驟三：點選「以 Facebook 帳戶綁定」。</div>
+				    </div>
+				    <div><img src="http://d3jagfr1ku3qj3.cloudfront.net/2014/05/A3.jpg" alt=""></div>
+				  </div>
+				  <div class="col-sm-4">
+				    <div class="step">
+				    	<div>
+				    		步驟四：系統會提示「每個社交網絡帳戶只可作一次綁定」，如確認綁定帳戶，請點選「確定」。如不需綁定，或希望以其他社交群組綁定，請點選「取消」。
+				    	</div>
+				    </div>
+				    <div><img src="http://d3jagfr1ku3qj3.cloudfront.net/2014/05/A4.jpg" alt=""></div>
+				  </div>
+				  <div class="col-sm-4">
+				    <div class="step">
+				    	<div>
+				    		步驟五：登入「Facebook」帳戶後，應用程式需要用戶授權存取特定資訊的權限，如同意授權，請點選「確定」。如不同意授權，請點選「取消」離開綁定程序。
+				    	</div>
+				    </div>
+				    <div><img src="http://d3jagfr1ku3qj3.cloudfront.net/2013/09/A5.jpg" alt=""></div>
+				  </div>
+				  <div class="col-sm-4">
+				    <div class="step">
+				    	<div>步驟六：同意授權後，系統會顯示「綁定完成」的訊息。
+				    	</div>
+				    </div>
+				    <div><img src="http://d3jagfr1ku3qj3.cloudfront.net/2014/05/A7.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div> 
+	</section>
+
+	<!-- story -->
+  <section id="story" class="container-fluid">
+    <h1>遊戲故事</h1>
+    <div class="row">
+      <div class="col-sm-6 story-left slideR">
+        <iframe src="https://www.youtube.com/embed/3lRjNbqrvN8" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-sm-6 story-right slideL">
+        <div class="content">
+          <div>千年以前，人以神為目標所創造的奧祕之塔，昇起了人神魔三界戰爭的狼煙。<br/><br/>
+					文明星火將盡之時，眾神打斷巨塔，隔絕三界。<br/><br/>
+					年月飛逝，留落人界的神魔再次燃起了戰火。<br/><br/>
+					人族的大軍逐漸崩潰，人類的國度變得分崩離淅。<br/><br/>
+					為了守護最後尺土，人類再次踏進一切矛盾的開端。<br/><br/>
+					解開千年封印 尋求神的力量。
+				</div>
+        </div>
+			</div>
+    </div>
+  </section>
+	
+	<!-- card introduction -->
+  <section id="intro" class="clearfix">
+  	<div>
+			<h1>卡片介紹</h1>
+			<!-- card visible -->
+			<div class="intro">
+				<div id="intro0" class="slideU">
+					<img class="introphoto" src="http://www.towerofsaviors.com/zh/wp-content/gallery/mobile-phone-wall-paper-1242-2208/thumbs/thumbs_Mobile_Phone_Wallpaper_(1242x2208)_v11_1.jpg">
+					<div id="mask0" class="mask">
+					<a>詳細資訊</a>				
+					</div>
+				</div>
+				<div id="intro1" class="slideU">
+					<img class="introphoto" src="http://www.towerofsaviors.com/zh/wp-content/gallery/mobile-phone-wall-paper-1242-2208/thumbs/thumbs_Mobile_Phone_Wallpaper_(1242x2208)_v11_2.jpg">
+					<div id="mask1" class="mask">
+					<a>詳細資訊</a>				
+					</div>
+				</div>
+				<div id="intro2" class="slideU">
+					<img class="introphoto" src="http://www.towerofsaviors.com/zh/wp-content/gallery/mobile-phone-wall-paper-1242-2208/thumbs/thumbs_Mobile_Phone_Wallpaper_(1242x2208)_v11_5.jpg">
+					<div id="mask2" class="mask">
+					<a>詳細資訊</a>				
+					</div>
+				</div>
+				<div id="intro3" class="slideU">
+					<img class="introphoto" src="http://www.towerofsaviors.com/zh/wp-content/gallery/mobile-phone-wall-paper-1242-2208/thumbs/thumbs_Mobile_Phone_Wallpaper_(1242x2208)_v11_4.jpg">
+					<div id="mask3" class="mask">
+					<a>詳細資訊</a>				
+					</div>
+				</div>
+				<div id="intro4" class="slideU">
+					<img class="introphoto" src="http://www.towerofsaviors.com/zh/wp-content/gallery/mobile-phone-wall-paper-1242-2208/thumbs/thumbs_Mobile_Phone_Wallpaper_(1242x2208)_v11_3.jpg">
+					<div id="mask4" class="mask">
+					<a>詳細資訊</a>				
+					</div>
+				</div>
+			</div>
+			<!-- card hidden -->
+			<div class="card">
+				<div id="card0" class="cardContent">
+					<img class="cardphoto" src="https://i.imgur.com/agXtDXC.png">
+					<img id="cardtable1" class="cardtable" src="http://i.imgur.com/jmFJAtE.png">
+				</div>
+				<div id="card1" class="cardContent">
+					<img class="cardphoto" src="https://i.imgur.com/cOxb3Fi.png">
+					<img class="cardtable" src="http://i.imgur.com/aolCEs3.png">
+				</div>
+				<div id="card2" class="cardContent">
+					<img class="cardphoto" src="https://i.imgur.com/XPskiJg.png">
+					<img class="cardtable" src="http://i.imgur.com/AI80iXB.png">
+				</div>
+				<div id="card3" class="cardContent">
+					<img class="cardphoto" src="https://i.imgur.com/YTWV5vC.png">
+					<img class="cardtable" src="http://i.imgur.com/KEBCLLg.png">
+				</div>
+				<div id="card4" class="cardContent">
+					<img class="cardphoto" src="https://i.imgur.com/669gG7n.png">
+					<img class="cardtable" src="http://i.imgur.com/G6nKWeC.png">
+				</div>
+			</div>  		
+  	</div>
+	</section>
+
+	<!-- contact -->
+  <section id="contact" class="container-fluid">
+	  <h1>聯絡我們</h1>
+	  <!-- info -->
+	  <div class="row">
+	    <div class="col-sm-5">
+	      <p>召喚師若需要尋求協助，可以透過以下途徑聯絡客服︰</p>
+	      <p><span class="glyphicon glyphicon-pencil"></span></span>  登入遊戲後，到「設定」->「聯絡我們」</p>
+	      <p><span class="glyphicon glyphicon-envelope"></span>  繁體中文版：cs.zh@towerofsaviors.com<br><span class="english">英文版：cs.en@towerofsaviors.com</span></p>
+	    </div>
+	    <!-- form -->
+	    <div class="col-sm-7 slideL">
+	      <div class="row">
+	        <form action="">
+		        <div class="col-sm-6 form-group"><input class="form-control" type="text" placeholder="姓名"></div>
+		        <div class="col-sm-6 form-group"><input class="form-control" type="text" placeholder="Email"></div>
+		        <div class="col-sm-6 form-group"><input class="form-control" type="text" placeholder="UID"></div>
+		        <div class="col-sm-6">
+		          <label class="radio-inline">
+		            <input type="radio" name="type">中文版
+		          </label>
+		          <label class="radio-inline">
+		            <input type="radio" name="type">英文版
+		          </label>
+		        </div>
+		        <div class="col-sm-12 form-group">
+		          <label for="sel1">問題類別
+		            <select class="form-control" name="" id="sel1">
+		              <option value="魔法石">魔法石</option>
+		              <option value="帳號綁定">帳號綁定</option>
+		              <option value="違規 與 停權警告">違規 與 停權警告</option>
+		              <option value="異常情況處理">異常情況處理</option>
+		              <option value="其他">其他</option>
+		            </select>
+		          </label>
+		        </div>
+		        <div class="col-sm-12 form-group">
+		          <textarea class="form-control" name="" id="" placeholder="問題內容" cols="30" rows="5"></textarea> 
+		        </div>
+		        <div class="col-sm-12 form-group">
+		          <button class="btn btn-default pull-right">送出</button> 
+	          </div>
+	      	</form>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+
+	<!-- footer -->
+  <footer>
+  	<p><a href="#tos" data-toggle="tooltip" title="TO TOP"><span class="glyphicon glyphicon-chevron-up"></span></a></p>
+		<p> &#169; 2017 Mad Head Limited. All Rights Reserved. </p>
+		<p> &#169; Abner Wang </p>
+  </footer>
+</body>
+</html>

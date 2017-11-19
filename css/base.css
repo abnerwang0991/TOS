@@ -1,0 +1,393 @@
+#guidance ul.nav.nav-pills, #guidance .tab-content #tutorial .tutorial-right .content span, #guidance .tab-content #battle .content span, #guidance .tab-content #battle .text, #guidance .tab-content #bind .step {
+  font-weight: bold;
+  font-size: 15px;
+  color: #FAFAFA; }
+
+body {
+  font-family: Microsoft JhengHei;
+  background: #262626;
+  color: #E3E3E3;
+  font-size: 14px;
+  text-decoration: none;
+  padding-top: 50px; }
+  body .container-fluid {
+    margin-bottom: 10px; }
+
+nav {
+  font-family: Microsoft JhengHei;
+  font-size: 18px; }
+  nav.navbar {
+    z-index: 9999;
+    border: none;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  nav .logo {
+    text-indent: -99999px;
+    background: url(https://cdn-www.bluestacks.com/bs-images/ghost-of-the-tower_logo.png);
+    background-size: cover;
+    width: 200px; }
+  nav .nav li a {
+    color: #dbb848 !important;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  nav .nav.navbar-nav li.active a {
+    color: #262626 !important;
+    background-color: #dbb848 !important; }
+  nav .nav.navbar-nav li a:hover {
+    color: #262626 !important;
+    background-color: #dbb848; }
+
+#myCarousel .item img {
+  width: 100%; }
+
+h1 {
+  color: #dbb848;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 70px; }
+
+#guidance ul.nav.nav-pills {
+  width: 95%;
+  margin: auto; }
+  #guidance ul.nav.nav-pills li.active a {
+    color: #262626;
+    background-color: #dbb848; }
+  #guidance ul.nav.nav-pills a {
+    color: #dbb848;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    #guidance ul.nav.nav-pills a:hover {
+      color: #262626;
+      background-color: #dbb848; }
+    #guidance ul.nav.nav-pills a:focus {
+      color: #262626;
+      background-color: #dbb848; }
+
+#guidance .tab-content #tutorial {
+  margin-top: 10px; }
+  #guidance .tab-content #tutorial .tutorial-left iframe {
+    width: 100%;
+    height: 300px; }
+  #guidance .tab-content #tutorial .tutorial-right {
+    margin-top: 10px; }
+
+#guidance .tab-content #battle {
+  margin-top: 10px; }
+  #guidance .tab-content #battle .text {
+    padding: 20px 0 10px 0; }
+  #guidance .tab-content #battle .btPhoto {
+    width: 100%; }
+
+#guidance .tab-content #bind img {
+  width: 100%; }
+
+#guidance .tab-content #bind .step {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+#story .story-left iframe {
+  width: 100%;
+  height: 300px; }
+
+#story .story-right {
+  height: 200px; }
+  #story .story-right .content {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px; }
+
+#intro {
+  position: relative;
+  width: 100%;
+  margin-top: 60px; }
+  #intro.clearfix {
+    content: "";
+    clear: both;
+    display: table; }
+  #intro .intro div {
+    float: left;
+    width: 33.33%;
+    overflow: hidden;
+    position: relative;
+    cursor: default; }
+    #intro .intro div img {
+      width: 100%;
+      display: block;
+      position: relative;
+      -webkit-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear; }
+    #intro .intro div .mask {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      overflow: hidden;
+      opacity: 0;
+      background-color: rgba(250, 250, 250, 0.6);
+      -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      #intro .intro div .mask a {
+        cursor: pointer;
+        color: #FAFAFA;
+        background-color: #262626;
+        opacity: 0.9; }
+        #intro .intro div .mask a:hover {
+          color: #262626;
+          background: #FAFAFA;
+          opacity: 0.9;
+          text-decoration: none;
+          -webkit-animation: tada 1s;
+          animation: tada 1s; }
+    #intro .intro div:hover {
+      opacity: 1; }
+      #intro .intro div:hover img {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+  #intro .card div {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: rgba(38, 38, 38, 0.9);
+    width: 100%;
+    height: 100%; }
+    #intro .card div .cardphoto {
+      position: absolute;
+      top: -50px;
+      right: 0px;
+      width: 100%;
+      z-index: 1;
+      margin: auto;
+      display: block;
+      -webkit-animation: slideLeft 1s;
+      animation: slideLeft 1s; }
+    #intro .card div .cardtable {
+      position: absolute;
+      top: 65%;
+      width: 100%;
+      z-index: 1;
+      margin: auto;
+      display: block; }
+
+#contact span.english {
+  padding-left: 17px; }
+
+footer {
+  text-align: center;
+  background-color: #1C1C1C;
+  padding: 5px; }
+  footer span {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #DAA520;
+    display: block; }
+    footer span:hover {
+      -webkit-transform: translateY(-30%);
+      -ms-transform: translateY(-30%);
+      transform: translateY(-30%);
+      color: #fff; }
+
+@media only screen and (min-width: 768px) {
+  #guidance .tab-content #tutorial .tutorial-left, #guidance .tab-content #tutorial .tutorial-right, #story .story-left, #story .story-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  h1 {
+    color: #dbb848;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px; }
+  .container-fluid {
+    margin: 60px 50px; }
+  #guidance .tab-content #tutorial {
+    margin-top: 30px; }
+    #guidance .tab-content #tutorial .tutorial-left {
+      height: 400px; }
+      #guidance .tab-content #tutorial .tutorial-left iframe {
+        width: 90%;
+        height: 100%; }
+    #guidance .tab-content #tutorial .tutorial-right {
+      height: 400px; }
+      #guidance .tab-content #tutorial .tutorial-right .content {
+        width: 90%; }
+  #guidance .tab-content #battle {
+    margin-top: 30px; }
+    #guidance .tab-content #battle .content {
+      margin-left: 3.1%; }
+    #guidance .tab-content #battle .text {
+      margin-left: 10%;
+      padding: 20px 0 10px 0; }
+    #guidance .tab-content #battle .btPhoto {
+      width: 80%;
+      margin: auto;
+      display: block; }
+  #guidance .tab-content #bind img {
+    width: 100%; }
+  #guidance .tab-content #bind .step {
+    height: 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  #story .story-left {
+    height: 400px; }
+    #story .story-left iframe {
+      width: 90%;
+      height: 100%; }
+  #story .story-right {
+    height: 400px; }
+    #story .story-right .content {
+      width: 90%;
+      margin: 0; }
+  #intro .intro div {
+    width: 20%; }
+    #intro .intro div a {
+      font-size: 18px;
+      padding: 10px; }
+  #intro .card div {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: rgba(38, 38, 38, 0.9);
+    width: 100%;
+    height: 100%; }
+    #intro .card div .cardphoto {
+      position: absolute;
+      top: 0px;
+      right: 80px;
+      width: 40%;
+      z-index: 1;
+      -webkit-animation: slideLeft 1s;
+      animation: slideLeft 1s; }
+    #intro .card div .cardtable {
+      position: absolute;
+      top: 40%;
+      left: 5%;
+      width: 40%;
+      z-index: 1; }
+  footer {
+    padding: 10px; } }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes slideLeft {
+  from {
+    -webkit-transform: translateX(70%);
+    transform: translateX(70%); }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes slideLeft {
+  from {
+    -webkit-transform: translateX(70%);
+    transform: translateX(70%); }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@-webkit-keyframes slideRight {
+  from {
+    -webkit-transform: translateX(-70%);
+    transform: translateX(-70%); }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes slideRight {
+  from {
+    -webkit-transform: translateX(-70%);
+    transform: translateX(-70%); }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@-webkit-keyframes slideUp {
+  from {
+    -webkit-transform: translateY(70%);
+    transform: translateY(70%); }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes slideUp {
+  from {
+    -webkit-transform: translateY(70%);
+    transform: translateY(70%); }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+.slideL {
+  visibility: hidden; }
+  .slideL.slideLeft {
+    visibility: visible;
+    -webkit-animation: slideLeft 1s;
+    animation: slideLeft 1s; }
+
+.slideR {
+  visibility: hidden; }
+  .slideR.slideRight {
+    visibility: visible;
+    -webkit-animation: slideRight 1s;
+    animation: slideRight 1s; }
+
+.slideU {
+  visibility: hidden; }
+  .slideU.slideUp {
+    visibility: visible;
+    -webkit-animation: slideUp 1s;
+    animation: slideUp 1s; }
+
+.fadeIn {
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s; }
